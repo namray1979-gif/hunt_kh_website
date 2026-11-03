@@ -22,7 +22,7 @@ button {
 .container{
   margin-top: 20px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: flex;
   overflow-x: auto;
   gap: 20px;
@@ -41,7 +41,7 @@ button {
 .card{
   flex: 1  0 0 auto;
   width: 400px;
-  height: 200px;
+  height: 220px;
   font-size: 30px;
   border-radius: 10px;
   text-align: center; 
@@ -167,7 +167,7 @@ img{
 .p-1{
     font-size: 12px;
     color: #fff;
-    margin-left: 23px;
+    margin-left: 20px;
 }
 .footer-2{
     width: 450px;
@@ -233,3 +233,27 @@ a{
 .cl{
     color: white;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .group {
+        flex-direction: column;
+        animation: none;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
