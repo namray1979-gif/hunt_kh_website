@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link rel="stylesheet" href="listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <a href="index.html"><img src="logo-white.png" alt=""></a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listing.html">Listing</a></li>
+                    <li><a href="booking.html">Book a visit</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Listing</a>
+            <a href="#">Book a visit</a>
+        </div>
+    </header>
+    <div class="hero">
+
+        <div class="content">
+
+            <div class="tag">
+                <i class="fa-solid fa-house-chimney"></i>
+                Rooms for Rent
+            </div>
+
+            <h1>
+                Find You Perfect<br>
+                Room for <span>Study</span>
+            </h1>
+
+            <p>
+                safe, affordable and comfortable and comfortble rooms
+                near your university in Phnom Penh.
+            </p>
+
+            <div class="features">
+                <span>
+                    <i class="fa-solid fa-shield-heart"></i>
+                    Safe & secure
+                </span>
+                <span>
+                    <i class="fa-solid fa-wifi"></i>
+                    Free Wi-Fi
+                </span>
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Prime Location
+                </span>
+                <span>
+                    <i class="fa-regular fa-heart"></i>
+                    Student Friendly
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="search-container">
+        <div class="search-item location">
+            <span class="icon"></span>
+            <div class="field-content">
+                <label>Location</label>
+                <select>
+                    <option value="">Choose your location</option>
+                    <option>BKK1</option>
+                    <option>Sen Sok</option>
+                    <option>Toul Kork</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="search-item">
+            <select>
+                <option value="">Select District</option>
+                <option>BKK1</option>
+                <option>Sen Sok</option>
+                <option>Toul Kork</option>
+
+            </select>
+        </div>
+        <div class="search-item">
+            <select>
+                <option value="Select Area">Select Area</option>
+                <option> Phnom Penh Thmei</option>
+                <option>Tuek Thla</option>
+                <option>Khmuonh</option>
+                <option> Krang Thnong</option>
+                <option> Ou Baek K'am</option>
+                <option> Kouk Khleang</option>
+                 <option> ​​​​​​Boeung Keng Kang 1 (BKK1)</option>
+                 <option> ​​​​​​Boeung Keng Kang 2 (BKK2)</option>
+                  <option>Boeung Keng Kang 3 (BKK3)</option>
+                 <option>Olympic</option> 
+                 <option>Tumnob Tuek</option> 
+                <option> Tuol Svay Prey 1 </option> 
+                <option> Tuol Svay Prey 2 </option> 
+
+
+            </select>
+        </div>
+
+
+        <div class="search-item price-item">
+            <span class="icon"></span>
+            <div class="content">
+                <label>Price Range</label>
+                <select>
+                    <option value="">$50 - $150 / month</option>
+                    <option>$70 - $150 / month</option>
+                    <option>$80 - $300 / month</option>
+                    <option>$100 - $500 / month</option>
+                    <option>$120 - $500 / month</option>
+                </select>
+            </div>
+        </div>
+        <button class="search-button" onclick="searchProperty()">
+            <span>⌕</span> Search
+        </button>
+    </div>
+    <div class="text">
+        <h2>Available Rooms</h2>
+    </div>
+    </div>
+    <div class="main-card">
+
+        <div class="card">
+            <img src="/room1.jpeg" alt="">
+            <div class="tittle">
+
+                <h3>Sunny room near RUPP</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Toul Kork</span>
+                <h3>$80<span>/month</span></h3>
+                <p>Room.30m²</p>
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room02.jpeg" alt="">
+            <div class="tittle">
+
+                <h3>City View Condo</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Toul Kork</span>
+                <h3>$150<span>/month</span></h3>
+                <p>Room.35m²</p>
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room03.jpeg" alt="">
+            <div class="tittle">
+                <h3>Garden Room</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>BKK1</span>
+                <h3>$120<span>/month</span></h3>
+                <p>Room.25m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room04.jpeg" alt="">
+            <div class="tittle">
+
+                <h3>Sunny room near RUPP</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>BBK1</span>
+                <h3>$150<span>/month</span></h3>
+                <p>Room.35m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-card">
+
+        <div class="card">
+            <img src="/room05.jpeg" alt="">
+            <div class="tittle">
+
+                <h3> Blue Door Studio</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Sen Sok</span>
+                <h3>$50<span>/month</span></h3>
+                <p>Room.20m²</p>
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room06.jpeg" alt="">
+            <div class="tittle">
+
+                <h3>City View Condo</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Sen Sok</span>
+                <h3>$130<span>/month</span></h3>
+                <p>Room.25m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room07.jpeg" alt="">
+            <div class="tittle">
+
+                <h3>Sunny room near RUPP</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Toul Kork</span>
+                <h3>$130<span>/month</span></h3>
+                <p> Room.30m²</p>
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room08.jpeg" alt="">
+            <div class="tittle">
+
+                <h3> Garden Room </h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>BBK1</span>
+                <h3>$150<span>/month</span></h3>
+                <p>Room.35m²</p>
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-card">
+
+        <div class="card">
+            <img src="/room9.png" alt="">
+            <div class="tittle">
+
+                <h3> Blue Door Studio</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Sen Sok</span>
+                <h3>$100<span>/month</span></h3>
+                <p>Room.25m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room10.png" alt="">
+            <div class="tittle">
+
+                <h3>City View Condo</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Sen Sok</span>
+                <h3>$110<span>/month</span></h3>
+                <p>Room.25m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room11.png" alt="">
+            <div class="tittle">
+
+                <h3>Sunny room near RUPP</h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>Toul Kork</span>
+                <h3>$80<span>/month</span></h3>
+                <p> Room.25m²</p>
+
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/room12.png" alt="">
+            <div class="tittle">
+
+                <h3> Garden Room </h3>
+                <span class="tag"><i class="fa-solid fa-location-dot"></i>BBK1</span>
+                <h3>$150<span>/month</span></h3>
+                <p>Room.35m²</p>
+
+                <button type="submit">
+                    See Details
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="pagination">
+        <button class="arrow disabled">&#10094;</button>
+
+        <button class="page active">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="arrow">&#10095;</button>
+    </div>
+    <footer>
+        <div class="footer-1">
+            <div class="footer-logo">
+                <img src="/logo-white.png" alt="">
+            </div>
+            <p class="p">Better Rooms. Brighter Future.</p>
+            <p class="p-1">© 2026 Home Hunt KH. All rights reserved.</p>
+        </div>
+        <div class="footer-2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Listing</a></li>
+                <li><a href="">How It Works</a></li>
+                <li><a href="">Book a visit</a></li>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <p class="cl">Follow US</p>
+            <div>
+                <span><i class="fa-brands fa-youtube"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-telegram"></i></span>
+            </div>
+        </div>
+        <div class="footer-4">
+            <div class="footer-4-1"></div>
+            <div class="footer-4-2">
+                <div class="ct">
+                    <span><i class="fas fa-location-dot"></i></span>
+                    <p class="cl">: Phnom Penh, Cambodia</p>
+                </div>
+                <div class="ct">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <p class="cl">: hello@homehuntkh.com</p>
+                </div>
+                <div class="ct">
+                    <span><i class="fas fa-phone"></i></span>
+                    <p class="cl">: 0972030567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
